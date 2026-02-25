@@ -67,8 +67,8 @@ export function generateDateStrings(count = 25) {
 
   return results.map(formatDDMMYYYY);
 }
-
-const BILL_COUNT = 2;
+const p = prompt("Number of bill 3500 - 4000");
+const BILL_COUNT = p || 30;
 
 function randomBetween3500And4000() {
   return +(Math.random() * (4000 - 3200) + 3200).toFixed(2);
